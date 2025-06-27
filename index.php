@@ -7,15 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+    
+
     <link rel="stylesheet" href="./css/style.css">
-    <title>Book Rental</title>
+    <title>Costume Rental</title>
+    
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
-        .gallery{
+        .gallery {
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -75,7 +78,7 @@
     ?>
 
     <div class="section-2">
-        <h2 style='margin-bottom:10px'>Daftar Costume Orent.Sanjou  </h2>
+        <h2 style='margin-bottom:10px'>Daftar Costume Orent.Sanjou </h2>
         <!-- <a href="#"><img src="./images/img_2.jpg" alt=""> -->
         <div class="gallery">
 
@@ -141,7 +144,7 @@
                     <option value="Jawa Tengah">Jawa Tengah</option>
                     <option value="Jawa Timur">Jawa Timur</option>
                     <option value="Jakarta">Jakarta</option>
-                    <option value="Bekasi">Bekasi</option>
+                    <option value="Bekasi">Sulawesi Utara</option>
                 </select>
                 <label for="message">message</label>
                 <textarea id="message" name="message" placeholder="Write something.." style="height:170px"
@@ -151,6 +154,11 @@
         </div>
 
     </div>
+
+<!-- Footer dari file terpisah -->
+<iframe src="./includes/footer.html" style="width: 100%; border: none;" height="120"></iframe>
+
+
 </body>
 
 </html>

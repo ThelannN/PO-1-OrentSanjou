@@ -33,7 +33,10 @@ if($error===false){
              VALUES ('{$_POST['prod-category']}','{$_POST['prod-title']}',{$_POST['prod-price']},'{$_POST['prod-desc']}','{$_POST['prod-date']}','{$file_name}','{$_POST['prod-author']}','{$_POST['prod-type']}');";
   $result = $conn->query($sql);
   $conn->close();
-  header("location:index.php?bookAddedSuccessfully");
- }
-    ?>
-
+    echo "<script>
+        alert('Book successfully added!');
+        window.location.href = 'http://localhost/Thelannn%20Project/admin/index.php?succesfullyAdded';
+    </script>";
+    exit;
+  }
+?>

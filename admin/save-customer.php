@@ -7,6 +7,9 @@ include "includes/config.php";
                VALUES ('{$_POST['name']}','{$_POST['email']}','{$_POST['pwd']}','{$_POST['phone']}','{$_POST['address']}','{$_POST['role']}');";
     $result = $conn->query($sql);
     $conn->close();
-    header("location:customer.php?customerAddedSuccessfully");
-   
-    ?>
+        echo "<script>
+        alert('Book successfully added!');
+        window.location.href = 'http://localhost/Thelannn%20Project/admin/index.php?succesfullyAdded';
+    </script>";
+    exit;
+?>

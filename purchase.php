@@ -277,7 +277,7 @@ function magnify(imgID, zoom) {
   <thead>
     <tr>
       <th colspan="2" style="background-color: skyblue; padding: 10px; font-size: 18px; text-align: center;">
-        Book Details
+        Costume Details
       </th>
     </tr>
   </thead>
@@ -368,7 +368,7 @@ if(isset($_SESSION['id'])){?>
     <td style="padding: 10px; font-weight: bold;"><h5>Payment:</h5></td>
     <td style="padding: 10px;display:flex;"><div style="margin: 0;font-size:12px">
     <p style="margin: 0;font-size:12px;margin-bottom:2px;">
-(Rent 1 Book at a Time) 
+(Rent 1 Costume at a Time) 
 </p>
   <button type='submit' name='pay' style='border-radius:5px;background:skyblue;width:118px;height:30px;border:none;cursor:pointer;color:white' id='#pay'>Proceed</button>
 </div>
@@ -396,7 +396,7 @@ if(isset($_POST['pay'])){
         </p>
         <p style="margin: 0;font-size:12px;">
           Rent rate according to selected date: <?php echo $rate."%" ?><br>
-          You need to return the rented book within: <?php echo $numOfReturnDay." days"; ?>
+          You need to return the rented costume within: <?php echo $numOfReturnDay." days"; ?>
         </p>
         <form action="message.php?id=<?php echo $row['book_id']?>" method="POST">
           <button type='submit' style='border-radius:5px;background:green;width:150px;height:35px;border:none;cursor:pointer;color:white'>Proceed to Confirmation</button>

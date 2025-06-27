@@ -23,22 +23,14 @@ if($result->num_rows==1){ //if any one data found go inside it
     $row = $result->fetch_assoc();
     if($password == $row['customer_pwd']){
 
-    // Session akan dibuat hanya jika email dan password cocok
-    $_SESSION['id'] = $row['customer_id'];
-    $_SESSION['customer_role'] = $row['customer_role'];
-    $_SESSION['customer_name'] = $row['customer_name'];
-    $_SESSION['customer_email'] = $row['customer_email'];
-
-    // Arahkan berdasarkan role
-    if ($row['customer_role'] === 'admin') {
-        header("Location: ./admin/index.php"); // sesuaikan dengan path halaman admin kamu
-    } else {
-        header("Location: ./profile.php"); // halaman default untuk user biasa
-    }
-
-    exit;
-}
-else{
+    //session will be created only if users email and passwords matched
+	$_SESSION['id'] = $row['customer_id'];
+	$_SESSION['customer_role'] = $row['customer_role'];
+	$_SESSION['customer_name'] = $row['customer_name'];
+	$_SESSION['customer_email'] = $row['customer_email'];
+header("Location:./profile.php");
+            // put exit after a redirect as header() does not stop execution
+            exit;}else{
                 echo " <h4 style='position:absolute;left:45%;z-index:4;top:70%;'>Incorrect password</h4>";//as user get inside if statem if userEmail matched
             }
 

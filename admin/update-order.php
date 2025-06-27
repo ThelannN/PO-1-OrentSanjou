@@ -60,6 +60,10 @@
     $conn->query($sql1);   
     
     $conn->close();
-    header("Location:http://localhost/BookStore/admin/order.php?succesfullyUpdated");
-   }
+    echo "<script>
+        alert('Book successfully updated!');
+        window.location.href = 'http://localhost/Thelannn%20Project/admin/index.php?succesfullyUpdated';
+    </script>";
+    exit;
+  }
 ?>

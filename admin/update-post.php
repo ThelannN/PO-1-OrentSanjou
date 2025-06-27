@@ -60,7 +60,11 @@
              WHERE book_id={$_GET['id']} ";
     $conn->query($sql1);   
     
-    $conn->close();
-    header("Location:http://localhost/BookStore/admin/index.php?succesfullyUpdated");
-   }
+        $conn->close();
+    echo "<script>
+        alert('Book successfully updated!');
+        window.location.href = 'http://localhost/Thelannn%20Project/admin/index.php?succesfullyUpdated';
+    </script>";
+    exit;
+  }
 ?>

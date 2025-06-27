@@ -41,7 +41,7 @@
           <a class="nav-link" href="feedback.php"><b>FEEDBACK</b></a>
         </li>
       </ul>
-      <button class="btn-info" style="border:none; background:white;margin-left:10px"> <a  href="../index.php" style="text-decoration:none" ><b>Go to Bookstore</b></a> </button>
+      <button class="btn-info" style="border:none; background:white;margin-left:10px"> <a  href="../index.php" style="text-decoration:none" ><b>Go to rent Store</b></a> </button>
     </div>
   </div>
 </nav>

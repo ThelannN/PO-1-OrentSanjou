@@ -7,7 +7,7 @@
         
         <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
         <link rel="stylesheet" href="./css/product_style.css">
-        <title>Book Rental</title>
+        <title>Costume Rent</title>
     </head>
     <body>
     <?php include_once './includes/navbar.php'?>
@@ -17,7 +17,7 @@
             <div class="vertical-nav">
                 <ul style='display:flex;flex-direction:column'>
                 <h4 style='margin:0;padding-top:10px;z-index:3'><div style='display:flex;gap:5px;'> <button class='btn' style='font-size:14px'><a href="./products.php?type=new" style='text-decoration:none;color:white'>New</a></button><button class='btn' style='font-size:14px'><a href="./products.php?type=old" style='text-decoration:none;color:white'>Old</a></button> </div><p>
-                   <u > <?php echo $_GET['type']==='new'? 'Rent New Books': 'Rent Old Books'?></u>
+                   <u > <?php echo $_GET['type']==='new'? 'Rent New Costume': 'Rent Old Costume'?></u>
                 </p></h4>
                     <h4 style='margin-top:0;padding-top:0'><left>Category</left></h4>
                     <li><a href="#Perempuan">Perempuan</a></li>

@@ -95,11 +95,11 @@ unset($_SESSION['order_auth']);
 <div class="mess-cont">
     <div class="mess-box">
         <div class="mess">
-            <img src="./images/thanks.png" alt="Thank You" style="height:80%;width:100%">
+            <img src="./images/Thanks.jpeg" alt="Thank You" style="height:80%;width:100%">
             <h3 style="color:grey">Your order is on the way!</h3>
-            <h3 style="color:grey;text-align:center">Thanks for Choosing Book Rental</h3>
+            <h3 style="color:grey;text-align:center">Thanks for Choosing our Rent Store ^_^</h3>
             <button class="btn" style="background:#11C9B6;border:none;">
-                <a href="./products.php?type=new" style="color:white;text-decoration:none;">Continue Renting</a>
+                <a href="./products.php?type=new" style="color:white;text-decoration:none;">Continue Renting to our Store</a>
             </button>
         </div>
     </div>

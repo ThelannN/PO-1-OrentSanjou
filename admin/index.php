@@ -6,8 +6,8 @@
     }
  ?>
 
-<h4 class='adm-h4'>All Books</h4>
-<h5 style="position:absolute;right:150px"><a href="add-post.php">Add Books</a></h5>
+<h4 class='adm-h4'>All Custome</h4>
+<h5 style="position:absolute;right:150px"><a href="add-post.php">Tambahkan Costume</a></h5>
 <br>
 <br>
 

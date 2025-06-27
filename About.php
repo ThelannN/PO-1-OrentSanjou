@@ -145,7 +145,7 @@ align-items:center;
     <div class="card">
       <center><img src="./images/p1.jfif" alt="Jane" style="width:100% height=300px"></center>
       <div class="container">
-      <center> <h2>Himanshu</h2></center>
+      <center> <h2>Yessa</h2></center>
        <center> <p class="title">Art Director</p></center>
         
         <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
@@ -157,11 +157,11 @@ align-items:center;
     <div class="card">
         <center><img src="./images/p2.jfif" alt="Jane" style="width:100% height=300px"></center>
       <div class="container">
-       <center> <h2>Abc</h2></center>
-       <center> <p class="title">Art Director</p></center>
+       <center> <h2>Dyllan</h2></center>
+       <center> <p class="title">Web Developer </p></center>
         
         <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
-        <center><p>Abc@example.com</p></center>
+        <center><p>Thelannn@gmail.com</p></center>
         <p><button class="button">Contact</button></p>
       </div>
   </div>
