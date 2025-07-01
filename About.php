@@ -8,7 +8,7 @@
       }
 .navbar{
   display: flex;
-  background-color:rgb(60, 124, 197);
+  background-color:rgb(224, 226, 227);
   position: fixed;
   top:0;
   width: 100%;
@@ -42,11 +42,11 @@
   }
 
   .nav-right li a:hover {
-    background-color: rgb(31, 199, 106);
+    background-color: rgb(202, 202, 202);
   }
 
   .nav-right .active {
-    background-color: #04AA6D;
+    background-color:rgb(220, 99, 13);
   }
 
 

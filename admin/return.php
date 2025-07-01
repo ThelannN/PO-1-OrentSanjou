@@ -19,11 +19,11 @@
     $conn->query($sql1);   
     $conn->query($sql2);   
     $conn->close();
-    header("Location:http://localhost/BookStore/admin/return.php?succesfullyUpdated");
+    header("Location:http://localhost/Thelannn%20Project/admin/return.php?succesfullyUpdated");
    }
 ?>
 
-<h4 class='adm-h4'>Book Return Request</h4>
+<h4 class='adm-h4'>Costume return request</h4>
 <br>
 
 <?php
@@ -64,7 +64,7 @@ if ($result->num_rows > 0) { ?>
     <tr>
     <th class="short">S.N</th>
     <th class="large">Customer Id</th>
-    <th class="medium">Book Id</th>
+    <th class="medium">Costume Id</th>
     <th class="medium">Quantity</th>
     <th class="medium">Return Date</th>
     <th class="medium">Requested Date</th>

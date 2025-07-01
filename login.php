@@ -11,7 +11,7 @@ if(isset($_POST['login'])){
 
     if(empty($_POST['pwd'])){
         echo "<h4 id='error_login'>Enter password</h4>";
- }
+ } 
 
 $email = mysqli_real_escape_string($conn,$_POST['email']);
 $password =mysqli_real_escape_string($conn,$_POST['pwd']);

@@ -50,7 +50,7 @@ if ($result->num_rows > 0) { ?>
     <th class="short">S.N</th>
     <th class="medium">First Name</th>
     <th class="medium">Last Name</th>
-    <th class="medium">Country</th>
+    <th class="medium">Region</th>
     <th class="short">Message</th>
     </tr>
 <?php 

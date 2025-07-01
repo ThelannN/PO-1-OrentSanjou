@@ -42,13 +42,13 @@
                   if($_SESSION["customer_role"] == 'admin'){
                     /* select query of post table for admin user */
                     //this will fetch product data in descending order with applied limitation per page
-                    $sql = "SELECT * FROM books
-                            ORDER BY books.book_id DESC LIMIT {$offset},{$limit}";
+                    $sql = "SELECT * FROM costumes
+                            ORDER BY costumes.book_id DESC LIMIT {$offset},{$limit}";
 
                   }elseif($_SESSION["user_role"] == 'normal'){
                     /* select query of post table for normal user */
-                    $sql = "SELECT * FROM books WHERE book_author='{$_SESSION['customer_name']}'
-                            ORDER BY books.book_id DESC LIMIT {$offset},{$limit}";
+                    $sql = "SELECT * FROM costumes WHERE book_author='{$_SESSION['customer_name']}'
+                            ORDER BY costumes.book_id DESC LIMIT {$offset},{$limit}";
                   }
 
                   $result = $conn->query($sql) or die("Query Failed.");
@@ -102,7 +102,7 @@ while($row = $result->fetch_assoc()) { //this will run for every row at a time a
                 include "includes/config.php"; 
                // Pagination btn using php with active effects 
 
-                $sql1 = "SELECT * FROM books";
+                $sql1 = "SELECT * FROM costumes";
                 $result1 = mysqli_query($conn, $sql1) or die("Query Failed.");
 
                 if(mysqli_num_rows($result1) > 0){

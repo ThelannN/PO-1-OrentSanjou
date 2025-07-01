@@ -11,6 +11,9 @@ require('./includes/config.php');
 
 $today_date = date("Y/n/j/");
 
+// Ambil metode pembayaran dari session
+$payment_method = isset($_SESSION['payment_method']) ? $_SESSION['payment_method'] : 'not_set';
+
 if (!isset($_GET['items'])) {
     // Pemesanan satu item
     $sql = "INSERT INTO rentorders (
@@ -18,38 +21,47 @@ if (!isset($_GET['items'])) {
         bid,
         price,
         date,
-        return_date
+        return_date,
+        payment_method,
+        bukti_img
     ) VALUES (
         {$_SESSION['id']},
         {$_GET['id']},
         {$_SESSION['payment_amt']},
         '{$today_date}',
-        '{$_SESSION['return_date']}'
+        '{$_SESSION['return_date']}',
+        '{$payment_method}',
+        '{$_SESSION['bukti-img']}'
     )";
 
     $conn->query($sql);
 
-    unset($_SESSION['payment_amt'], $_SESSION['return_date']);
+    // Hapus data sesi setelah transaksi selesai
+    unset($_SESSION['payment_amt'], $_SESSION['return_date'], $_SESSION['payment_method']);
 } else {
     // Pemesanan dari keranjang (banyak item)
     $sql = "SELECT * FROM carts WHERE uid = {$_SESSION['id']} AND status = 'active'";
     $result = $conn->query($sql);
 
     while ($row = $result->fetch_assoc()) {
+        $pm = $row['payment_method'] ?? 'not_set'; // gunakan data dari tabel carts
+
         $sql2 = "INSERT INTO rentorders (
             cid,
             bid,
             quantity,
             price,
             date,
-            return_date
+            return_date,
+            payment_method
         ) VALUES (
             {$_SESSION['id']},
             {$row['pid']},
             {$row['quantity']},
             {$row['price']},
             '{$today_date}',
-            '{$row['return_date']}'
+            '{$row['return_date']}',
+            '{$pm}'
         )";
         $conn->query($sql2);
     }

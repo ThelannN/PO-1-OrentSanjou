@@ -142,7 +142,7 @@ $conn->close();
               <div style='border:1px solid skyblue;width:100%;text-align:center'></div>
               <h2>Ordered History</h2>
 
-              <span style='margin-right:5px'><b>Delete Returned Books</b>
+              <span style='margin-right:5px'><b>Delete Returned Costume</b>
               </span>
               <div style='text-align:center;margin:20px;display:flex;justify-content:center'><input name='deleteReturned'
                   type='submit' value='Delete' class="btn btn-danger" style="background:#DC143C;"></input>
@@ -204,7 +204,7 @@ $conn->close();
 
                   while ($row10 = $result10->fetch_assoc()) {
                     $sn++;
-                    $sql11 = "SELECT * FROM books where book_id='{$row10['bid']}' ";
+                    $sql11 = "SELECT * FROM costumes where book_id='{$row10['bid']}' ";
                     $result11 = $conn->query($sql11);
                     $row11 = $result11->fetch_assoc();
                     ?>

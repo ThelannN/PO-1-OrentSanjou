@@ -4,7 +4,7 @@
 
     //this will provide previous user value before updating 
     include "includes/config.php";
-    $sql = "SELECT * FROM books where book_id={$_GET['id']}";
+    $sql = "SELECT * FROM costumes where book_id={$_GET['id']}";
     $result = $conn->query($sql);
     // output data of each row
     $row = $result->fetch_assoc();
@@ -51,7 +51,7 @@
    if(isset($_POST['update'])){
     //below sql will update user details inside sql table when update is clicked
     include "includes/config.php";
-    $sql1 = "UPDATE books
+    $sql1 = "UPDATE costumes
                SET book_catag= '{$_POST['catag']}' ,
                   book_title= '{$_POST['title']}' ,
                   book_price= '{$_POST['price']}' ,

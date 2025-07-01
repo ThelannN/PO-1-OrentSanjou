@@ -87,7 +87,7 @@
             include "includes/config.php";
             $limit = 10;
 
-            $sql = "SELECT * FROM books ORDER BY books.book_id DESC LIMIT {$limit}";
+            $sql = "SELECT * FROM costumes ORDER BY costumes.book_id DESC LIMIT {$limit}";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
@@ -116,11 +116,9 @@
     <div class="section-4">
         <h2 style="">Metode Pembayaran</h2>
         <div class="brand-container">
-            <img class='brand' src="./images/Qris_logo.jpeg" alt="">
-            <img class='brand' src="./images/Bca_Logo.jpeg" alt="">
+            <img class='brand' src="./images/BNI_logo.jpg" alt="">
             <img class='brand' src="./images/Gopay_logo.jpeg" alt="">
             <img class='brand' src="./images/Dana_logo.Jpeg" alt="">
-            <img class='brand' src="./images/Shopeepay_logo.Jpeg" alt="">
         </div>
     </div>
 

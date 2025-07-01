@@ -33,7 +33,7 @@
                         <?php
 //this will dynamically fetch all related category data from a database
 include "includes/config.php";
-$sql = "SELECT * FROM books where  book_catag='Perempuan'";  
+$sql = "SELECT * FROM costumes where  book_catag='Perempuan'";  
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
@@ -70,7 +70,7 @@ while($row = $result->fetch_assoc()) {
                         <?php
 //this will dynamically fetch all related category data from a database
 include "includes/config.php";
-$sql = "SELECT * FROM books  where  book_catag='Laki-Laki'";
+$sql = "SELECT * FROM costumes  where  book_catag='Laki-Laki'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row

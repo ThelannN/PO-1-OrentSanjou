@@ -1,6 +1,6 @@
 <?php
     include "includes/config.php";
-$sql = "DELETE FROM books where book_id={$_GET['id']}"; //sql query for deleting
+$sql = "DELETE FROM costumes where book_id={$_GET['id']}"; //sql query for deleting
 $conn->query($sql); //executing sql query
 
     echo "<script>

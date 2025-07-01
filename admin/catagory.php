@@ -5,7 +5,7 @@
         header("Location:login.php?unauthorizedAccess");
       }
  ?>
-<h4 class='adm-h4'>Book Category</h4>
+<h4 class='adm-h4'>Costume Category</h4>
 <br>
 <br>
 
@@ -27,7 +27,7 @@ $catagory_list = ['adventure','thriller','romantic','comedy'];
 for($i=0; $i<sizeof($catagory_list); $i++){
     $sn = $i+1;
     $catagory = $catagory_list[$i];
-    $sql = "SELECT * FROM books WHERE book_catag= '{$catagory}' ";
+    $sql = "SELECT * FROM costumes WHERE book_catag= '{$catagory}' ";
     $result = $conn->query($sql);
     $total_post = $result->num_rows;
     

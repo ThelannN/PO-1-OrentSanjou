@@ -28,7 +28,7 @@ if(isset($_FILES['book-img'])){
 
 if($error===false){
   session_start();
-  $sql="INSERT INTO books 
+  $sql="INSERT INTO costumes 
                     (book_catag,book_title,book_price,book_desc,book_date,book_img,book_author,book_type)
              VALUES ('{$_POST['prod-category']}','{$_POST['prod-title']}',{$_POST['prod-price']},'{$_POST['prod-desc']}','{$_POST['prod-date']}','{$file_name}','{$_POST['prod-author']}','{$_POST['prod-type']}');";
   $result = $conn->query($sql);
